@@ -1,0 +1,149 @@
+@x: 28.125rem;
+@mainColor: #00a0e9;
+@cW: #ffffff;
+@c3: #333333;
+@c6: #666666;
+@c9: #999999;
+
+.w(@v:0) {
+  width: @v/@x;
+}
+.h(@v:0){
+  height:@v/@x;
+}
+.bc(@v:#000){
+  background-color: @v;
+}
+.bs(@w,@h) {
+  background-size: @w/@x @h/@x;
+}
+.bp(@w,@h) {
+  background-position: @w/@x @h/@x;
+}
+.br(@v){
+  border-radius: @v/@x;
+}
+.c(@v:#000) {
+  color: @v;
+}
+.mt(@v){
+  margin-top: @v/@x;
+}
+.mr(@v){
+  margin-right: @v/@x;
+}
+.mb(@v){
+  margin-bottom: @v/@x;
+}
+.ml(@v){
+  margin-left: @v/@x;
+}
+.p(@t:0,@r:0,@b:0,@l:0){
+  padding:@t/@x @r/@x @b/@x @l/@x;
+}
+.m(@t:0,@r:0,@b:0,@l:0){
+  margin:@t/@x @r/@x @b/@x @l/@x;
+}
+.pt(@v){
+  padding-top: @v/@x;
+}
+.pr(@v){
+  padding-right: @v/@x;
+}
+.pb(@v){
+  padding-bottom: @v/@x;
+}
+.pl(@v){
+  padding-left: @v/@x;
+}
+.fs(@v:24){
+  font-size: @v/@x;
+}
+.t(@v:0){
+  top:@v/@x;
+}
+.r(@v:0){
+  right: @v/@x;
+}
+.b(@v:0){
+  bottom: @v/@x;
+}
+.l(@v:0){
+  left: @v/@x;
+}
+.lh(@v:0){
+  line-height: @v/@x;
+}
+.bdr(@v){
+  border-radius: @v/@x;
+}
+.bdr2(@v,@q,@w,@e){
+  border-radius: @v/@x,@q/@x,@w/@x,@e/@x;
+}
+
+.bgs(@v,@m){
+  background-size: @v/@x,@m/@x;
+}
+.bgp(@v,@m){
+  background-position: @v/@x,@m/@x;
+}
+.ti(@v){
+  text-indent: @v/@x;
+}
+
+
+.dn(){
+  display: none;
+}
+.db(){
+  display: block;
+}
+.dib(){
+  display: inline-block;
+}
+.di(){
+  display: inline;
+}
+.pr(){
+  position: relative;
+}
+.pa(){
+  position: absolute;
+}
+.pf(){
+  position: fixed;
+}
+.bn(){
+  border:none;
+}
+.utn(){
+  outline:none;
+}
+.fl(){
+  float: left;
+}
+.fr(){
+  float: right;
+}
+.tc(){
+  text-align: center;
+}
+.tr(){
+  text-align: right;
+}
+.fwn(){
+  font-weight: normal;
+}
+.oh(){
+  overflow: hidden;
+}
+.lstn(){
+  list-style-type: none;
+}
+.tdn(){
+  text-decoration: none;
+}
+.tdu(){
+  text-decoration: underline;
+}
+
