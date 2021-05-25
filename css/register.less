@@ -1,0 +1,98 @@
+@import "_function";
+body{
+  .pb(340);
+  .bc(#000);
+  .register-logo{
+    .mt(150);
+    .ml(232);
+    .mr(226);
+    .w(292);
+    .h(122);
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  form{
+    .fs(30);
+    &>p{
+      .h(56);
+      .lh(56);
+      .ml(172);
+      .mb(50);
+      .mr(138);
+      border-bottom:1px solid #fff;
+      .c(#fff);
+      input{
+        .w(320);
+        .bc(#000);
+        border: none;
+        outline: none;
+      }
+      &:first-child{
+        .mt(80);
+      }
+    }
+    .identify{
+      overflow: hidden;
+      p{
+        .h(56);
+        .lh(56);
+        .ml(172);
+        .c(#fff);
+        float: left;
+        border-bottom:1px solid #fff;
+        .w(288);
+        input{
+          .w(168);
+          .bc(#000);
+          border: none;
+          outline: none;
+        }
+      }
+      div{
+        float: right;
+        .mt(12);
+        .mr(138);
+        .w(128);
+        .h(40);
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .agreement{
+    .mt(40);
+    .ml(172);
+    .c(#fff);
+    .fs(24);
+    input{
+      .w(22);
+      .h(22);
+    }
+  }
+  .submit{
+    .ml(172);
+    .mt(70);
+    .w(444);
+    .h(74);
+    .lh(74);
+    text-align: center;
+    border-radius: 4%;
+    .bc(#fff)
+  }
+  .login{
+    .mt(36);
+    .fs(24);
+    float: right;
+    .mr(140);
+    .c(#fff);
+    a{
+      text-decoration: none;
+      .c(#ee0000);
+      .fs(30);
+    }
+  }
+}
