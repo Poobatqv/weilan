@@ -312,3 +312,81 @@ section,
 summary {
   display: block;
 }
+/*清楚浮动*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+/*解决ie6的兼容性问题*/
+.header {
+  width: 26.66666667rem;
+  height: 3.12888889rem;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+.header div {
+  float: left;
+  box-sizing: border-box;
+  height: 3.12888889rem;
+  color: #ffffff;
+}
+.header div .iconfont {
+  font-size: 1.13777778rem;
+}
+.header .scanIt {
+  width: 20%;
+  padding-left: 0.92444444rem;
+}
+.header .scanIt i {
+  float: left;
+  margin-top: 0.99555556rem;
+}
+.header .search {
+  width: 60%;
+}
+.header .search .searchBar {
+  width: 8.88888889rem;
+  height: 1.24444444rem;
+  margin-left: 3.55555556rem;
+  margin-right: 3.55555556rem;
+  margin-top: 0.92444444rem;
+  border-bottom: #ffffff 1px solid;
+}
+.header .search .searchBar i {
+  float: left;
+}
+.header .search .searchBar input {
+  float: left;
+  width: 7.64444444rem;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.header .menu {
+  width: 20%;
+  padding-right: 0.92444444rem;
+}
+.header .menu i {
+  float: right;
+  margin-top: 0.99555556rem;
+}
+.subNav {
+  background-color: #000000;
+}
+.indexNav {
+  background-color: transparent;
+}
+.content .banner img {
+  width: 26.66666667rem;
+  height: 11.37777778rem;
+}

@@ -1,3 +1,4 @@
+//初始化样式
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block
@@ -226,4 +227,86 @@ a img {
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block
+}
+
+/*清楚浮动*/
+.clearfix:after{content:""; display:block; clear:both; height:0; line-height:0; visibility:hidden;}
+.clearfix{zoom:1;}/*解决ie6的兼容性问题*/
+
+
+
+
+
+
+@import "_function";
+//页面头部和页面底部
+.header {
+  .w(750);
+  .h(88);
+  .pa;
+  .t(0);
+  .l(0);
+  div {
+    float: left;
+    box-sizing: border-box;
+    .h(88);
+    color: #ffffff;
+    .iconfont {
+      .fs(32);
+    }
+  }
+  .scanIt{
+    width: 20%;
+    .pl(26);
+    i{
+      float: left;
+      .mt(28);
+    }
+  }
+  .search{
+    width: 60%;
+    .searchBar{
+      .w(250);
+      .h(35);
+      .ml(100);
+      .mr(100);
+      .mt(26);
+      border-bottom: #ffffff 1px solid;
+      i{
+        float: left;
+      }
+      input{
+        float: left;
+        .w(215);
+        .h(30);
+        .lh(30);
+        border: none;
+        outline: none;
+        background-color: transparent;
+      }
+    }
+  }
+  .menu{
+    width: 20%;
+    .pr(26);
+    i{
+      float: right;
+      .mt(28);
+    }
+  }
+}
+.subNav {
+  .bc(@mainColor);
+}
+.indexNav {
+  background-color: transparent;
+}
+
+.content {
+  .banner {
+    img {
+      .w(750);
+      .h(320);
+    }
+  }
 }
