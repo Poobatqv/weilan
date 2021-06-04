@@ -1,0 +1,115 @@
+@import "_function";
+body{
+  .pb(340);
+  .bc(#000);
+  .login-logo{
+    .mt(150);
+    .ml(232);
+    .mr(226);
+    .w(292);
+    .h(122);
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  form{
+    .fs(30);
+    &>p{
+      .h(56);
+      .lh(56);
+      .ml(172);
+      .mb(50);
+      .mr(138);
+      border-bottom:1px solid #fff;
+      .c(#fff);
+      input{
+        .w(320);
+        .bc(#000);
+        border: none;
+        outline: none;
+      }
+      &:first-child{
+        .mt(80);
+      }
+    }
+    .identify{
+      overflow: hidden;
+      p{
+        .h(56);
+        .lh(56);
+        .ml(172);
+        .c(#fff);
+        float: left;
+        border-bottom:1px solid #fff;
+        .w(288);
+        input{
+          .w(168);
+          .bc(#000);
+          border: none;
+          outline: none;
+        }
+      }
+      div{
+        float: right;
+        .mt(12);
+        .mr(138);
+        .w(128);
+        .h(40);
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .submit{
+    .ml(172);
+    .mt(70);
+    .w(444);
+    .h(74);
+    .lh(74);
+    text-align: center;
+    border-radius: 4%;
+    .bc(#fff)
+  }
+  .register{
+    overflow: hidden;
+    .mt(20);
+    a{
+      .c(#fff);
+      .fs(24);
+      &:first-child{
+        float: left;
+        .ml(176);
+      }
+      &:last-child{
+        float: right;
+        .mr(140);
+      }
+    }
+  }
+  .other-ways{
+    .mt(78);
+    .c(#fff);
+    text-align: center;
+    overflow: hidden;
+    p{
+      .fs(36);
+      .mb(32);
+    }
+    a{
+      .w(110);
+      .h(110);
+      float: left;
+      .ml(50);
+      &:nth-of-type(1){
+        .ml(178);
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
