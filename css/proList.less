@@ -1,0 +1,145 @@
+@import '_function';
+@import '_icons';
+.container {
+    .pl(10);
+    .pr(10);
+}
+
+.header {
+    .h(90);
+    .bc(#000);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .pr(30);
+    .pl(25);
+    h2 {
+        .c(#fff);
+        .fs(30);
+        .lh(90);
+    }
+    .icon-back {
+        .w(20);
+        .h(35);
+        .mr(20);
+        background-size: 20/@x 35/@x;
+    }
+    .icon-search {
+        .w(40);
+        .h(40);
+        background-size: 40/@x 40/@x;
+    }
+}
+
+.menu {
+    .h(80);
+    border-bottom: 1px solid #c9c9c9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .fs(24);
+    .c(@c3);
+    .pr(20);
+    .pl(15);
+    input {
+        .h(32);
+        .w(108);
+        .br(8);
+        border: 1px solid #000;
+        .tc;
+        .lh(32);
+    }
+    .item {
+        .oh;
+    }
+    .icon-arrow {
+        .w(20);
+        .h(20);
+        .bs(40, 20);
+        vertical-align: middle;
+        &.down {
+            .bp(0, 0);
+        }
+        &.right {
+            .bp(-20, 0);
+        }
+    }
+}
+
+.list {
+    .item {
+        .fs(24);
+        .oh;
+        .pr(28);
+        .pb(50);
+        border-bottom: 1px solid #c9c9c9;
+    }
+    img {
+        .w(320);
+        .h(220);
+        .fl;
+        .mr(55);
+    }
+    h3 {
+        .mt(45);
+        .fs(24);
+        .c(@c3);
+    }
+    .operation {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .h(124);
+    }
+    .current {
+        .fs(36);
+        .c(#f00);
+    }
+    .old {
+        text-decoration: line-through;
+        .c(@c9);
+        .lh(30);
+    }
+    .buy {
+        .oh;
+        &>div {
+            .w(142);
+            .h(36);
+            .br(5);
+            .c(#fff);
+            .tc;
+            .lh(36);
+        }
+        .add {
+            .bc(#000);
+        }
+        .pay {
+            .bc(#f00);
+            .mt(17);
+        }
+    }
+}
+
+.loading {
+    .h(130);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon-loading {
+        .h(60);
+        .w(60);
+        .mr(15);
+        .bs(60, 60);
+        transform: rotate(45deg);
+        animation: rotate360 2s infinite;
+    }
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(405deg);
+    }
+}

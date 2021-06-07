@@ -1,0 +1,159 @@
+@import '_function';
+@import '_icons';
+.container {
+    .pl(10);
+    .pr(10);
+}
+
+.header {
+    .h(90);
+    .bc(#000);
+    .pr(30);
+    .pl(25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+        .c(#fff);
+        .fs(30);
+        .lh(90);
+    }
+    .icon-back {
+        .w(20);
+        .h(35);
+        .mr(20);
+        background-size: 20/@x 35/@x;
+    }
+    .icon-search {
+        .w(40);
+        .h(40);
+        background-size: 40/@x 40/@x;
+    }
+}
+
+.check {
+    input[type=checkbox] {
+        display: none;
+        appearance: none;
+    }
+    input[type=checkbox]+span {
+        .db;
+        .w(16);
+        .h(16);
+        border: 3px/@x solid #000;
+    }
+    input[type=checkbox]:checked+span {
+        .bc(#000);
+    }
+}
+
+.main {
+    .oh;
+    .item {
+        .w(680);
+        margin: 0 auto 33px/@x;
+        border-bottom: 1px solid #d2d2d2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .pb(22);
+        img {
+            .w(320);
+            .h(220);
+        }
+        .desc {
+            .w(304);
+        }
+        h3 {
+            .mt(55);
+            .fs(24);
+            .lh(36);
+        }
+        .current {
+            .mt(35);
+            .c(#f00);
+            .fs(36);
+        }
+        .old {
+            .fs(24);
+            .c(@c9);
+            .lh(32);
+            text-decoration: line-through;
+        }
+        .num-box {
+            .fl;
+            .w(124);
+            .h(34);
+            border: 1px solid #000;
+            display: flex;
+            justify-content: space-between;
+            .reduce,
+            .plus {
+                .h(32);
+                .w(32);
+                .lh(30);
+                .tc;
+                border: none;
+                outline: none;
+                background: none;
+                .fs(24);
+                box-sizing: border-box;
+            }
+            .num {
+                .w(54);
+                .tc;
+                border-left: 1px solid #000;
+                border-right: 1px solid #000;
+                border-top: none;
+                border-bottom: none;
+                outline: none;
+            }
+        }
+        .del {
+            .fr;
+            .fs(24);
+            .c(@c9);
+            border: none;
+            outline: none;
+            background: none;
+        }
+    }
+}
+
+.bottom-bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    .w(730);
+    .h(130);
+    .bc(#fff);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .check {
+        .fs(30);
+        span {
+            .fl;
+            .mt(8);
+            .mr(20);
+            .ml(30);
+        }
+    }
+    .total {
+        .fs(36);
+        .ml(100);
+        span {
+            .c(#f00);
+        }
+    }
+    .pay {
+        .w(195);
+        .h(54);
+        .bc(#f00);
+        .br(5);
+        .fs(24);
+        .tc;
+        .lh(54);
+        .c(#fff);
+    }
+}
