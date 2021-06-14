@@ -1,0 +1,104 @@
+@import '_function';
+@import '_icons';
+.container {
+    .pl(10);
+    .pr(10);
+}
+
+.header {
+    .h(90);
+    .bc(#000);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .pr(30);
+    .pl(25);
+    h2 {
+        .c(#fff);
+        .fs(30);
+        .lh(90);
+    }
+    .icon-back {
+        .w(20);
+        .h(35);
+        .mr(20);
+        background-size: 20/@x 35/@x;
+    }
+    .icon-search {
+        .w(40);
+        .h(40);
+        background-size: 40/@x 40/@x;
+    }
+}
+
+.loading {
+    .h(130);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon-loading {
+        .h(60);
+        .w(60);
+        .mr(15);
+        .bs(60, 60);
+        transform: rotate(45deg);
+        animation: rotate360 2s infinite;
+    }
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(405deg);
+    }
+}
+
+.main {
+    .pl(220);
+    .pr(54);
+    .pr;
+    .menu {
+        .l;
+        .t;
+        .pa;
+        .w(185);
+        .fs(24);
+        .bc(#636363);
+        .pb(20);
+        .item {
+            .h(70);
+            border-left: 10/@x solid #636363;
+            .c(#fff);
+            .lh(70);
+            .tc;
+            &.on {
+                .bc(#fff);
+                .c(#000);
+                border-left: 10/@x solid #eb6100;
+            }
+        }
+    }
+    .list {
+        .pt(70);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item {
+            .w(222);
+            .mb(52);
+        }
+        img {
+            .w(216);
+            .h(146);
+            border: 3/@x solid #d2d2d2;
+        }
+        h4 {
+            .lh(60);
+            .h(60);
+            .fs(24);
+            .tc;
+        }
+    }
+}

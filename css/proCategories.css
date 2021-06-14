@@ -1,0 +1,117 @@
+.icon {
+  display: inline-block;
+  width: 0.71111111rem;
+  height: 0.71111111rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon.icon-back {
+  background-image: url('../img/icon_back.png');
+}
+.icon.icon-arrow {
+  background-image: url('../img/icon_arrow.png');
+}
+.icon.icon-search {
+  background-image: url('../img/icon_search.png');
+}
+.icon.icon-loading {
+  background-image: url('../img/icon_loading.png');
+}
+.container {
+  padding-left: 0.35555556rem;
+  padding-right: 0.35555556rem;
+}
+.header {
+  height: 3.2rem;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.06666667rem;
+  padding-left: 0.88888889rem;
+}
+.header h2 {
+  color: #ffffff;
+  font-size: 1.06666667rem;
+  line-height: 3.2rem;
+}
+.header .icon-back {
+  width: 0.71111111rem;
+  height: 1.24444444rem;
+  margin-right: 0.71111111rem;
+  background-size: 0.71111111rem 1.24444444rem;
+}
+.header .icon-search {
+  width: 1.42222222rem;
+  height: 1.42222222rem;
+  background-size: 1.42222222rem 1.42222222rem;
+}
+.loading {
+  height: 4.62222222rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading .icon-loading {
+  height: 2.13333333rem;
+  width: 2.13333333rem;
+  margin-right: 0.53333333rem;
+  background-size: 2.13333333rem 2.13333333rem;
+  transform: rotate(45deg);
+  animation: rotate360 2s infinite;
+}
+@keyframes rotate360 {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+.main {
+  padding-left: 7.82222222rem;
+  padding-right: 1.92rem;
+  position: relative;
+}
+.main .menu {
+  left: 0rem;
+  top: 0rem;
+  position: absolute;
+  width: 6.57777778rem;
+  font-size: 0.85333333rem;
+  background-color: #636363;
+  padding-bottom: 0.71111111rem;
+}
+.main .menu .item {
+  height: 2.48888889rem;
+  border-left: 0.35555556rem solid #636363;
+  color: #ffffff;
+  line-height: 2.48888889rem;
+  text-align: center;
+}
+.main .menu .item.on {
+  background-color: #ffffff;
+  color: #000000;
+  border-left: 0.35555556rem solid #eb6100;
+}
+.main .list {
+  padding-top: 2.48888889rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main .list .item {
+  width: 7.89333333rem;
+  margin-bottom: 1.84888889rem;
+}
+.main .list img {
+  width: 7.68rem;
+  height: 5.19111111rem;
+  border: 0.10666667rem solid #d2d2d2;
+}
+.main .list h4 {
+  line-height: 2.13333333rem;
+  height: 2.13333333rem;
+  font-size: 0.85333333rem;
+  text-align: center;
+}
